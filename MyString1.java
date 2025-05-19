@@ -15,10 +15,13 @@ public class MyString1 {
         return chars[index];
     }
 
-    // Возвращает длину строки
-    public int length() {
-        return chars.length;
+public int length() {
+    int length = 0;
+    for (char c : chars) {
+        length++;
     }
+    return length;
+}
 
     // Возвращает подстроку
     public MyString1 substring(int begin, int end) {
